@@ -5,6 +5,7 @@ import com.canyan7n.springbootex.pojo.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.ImportResource;
 
 /**
  * @author ：macheng
@@ -15,12 +16,11 @@ import org.springframework.context.annotation.Import;
  */
 @Configuration(proxyBeanMethods = false)
 // @Import({Car.class, Person.class})
+@ImportResource("classpath:ioc.xml")
 public class BeanConfiguration {
 
     @Bean
     public Person person01(){
-        Person personn = new Person();
-        System.out.println(personn.getClass());
-        return personn;
+        return new Person();
     }
 }
