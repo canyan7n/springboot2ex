@@ -2,6 +2,7 @@ package com.canyan7n.springbootex.myconfiguration;
 
 import com.canyan7n.springbootex.pojo.Car;
 import com.canyan7n.springbootex.pojo.Person;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
