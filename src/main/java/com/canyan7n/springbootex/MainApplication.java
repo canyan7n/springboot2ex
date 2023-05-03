@@ -29,5 +29,6 @@ public class MainApplication {
 
         Car car01 = run.getBean("car01", Car.class);
         System.out.println(car01);
+
     }
 }
