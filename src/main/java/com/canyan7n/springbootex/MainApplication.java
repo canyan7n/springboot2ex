@@ -17,7 +17,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class MainApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext run = SpringApplication.run(MainApplication.class, args);
-        String[] beanDefinitionNames = run.getBeanDefinitionNames();
+/*        String[] beanDefinitionNames = run.getBeanDefinitionNames();
         for(String name : beanDefinitionNames){
             System.out.println(name);
         }
@@ -28,7 +28,7 @@ public class MainApplication {
         bean1.name();
 
         Car car01 = run.getBean("car01", Car.class);
-        System.out.println(car01);
+        System.out.println(car01);*/
 
     }
 }
